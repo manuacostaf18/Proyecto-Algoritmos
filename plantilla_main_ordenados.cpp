@@ -73,6 +73,18 @@ int main(){
 	double t5_1 = gettime();
 	double t5 = t5_1 - t5_0;
 	cout << "Tiempo tomado ordenando al vector5_ordenado = " << t5 << endl;
+	
+	//Imprimiendo los vectores ordenados, después del algoritmo (opcional)
+	/*cout << "Vector 1 ordenado: " << endl;
+	vector1_ordenado_end.display();
+	cout << endl << "Vector 2 ordenado: " << endl;
+	vector2_ordenado_end.display();
+	cout << endl << "Vector 3 ordenado: " << endl;
+	vector3_ordenado_end.display();
+	cout << endl << "Vector 4 ordenado: " << endl;
+	vector4_ordenado_end.display();
+	cout << endl << "Vector 5 ordenado: " << endl;
+	vector5_ordenado_end.display();*/
 
 	return 0;
 	
