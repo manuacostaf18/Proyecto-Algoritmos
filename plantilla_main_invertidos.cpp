@@ -4,16 +4,22 @@
 #include <sys/time.h>
 using namespace std;
 
+//Funciones adicionales
 double gettime(){
   struct timeval tp;
   gettimeofday(&tp, NULL);
   return tp.tv_sec + tp.tv_usec/(double)1.0e6;
 }
 
+void swap(int i, int j, Vector& vector){
+  int temp = vector.get(i);
+  vector.set(i, vector.get(j));
+  vector.set(j, temp);
+}
+
+//Algoritmo
 /*
-
 PONER ACÁ EL CÓDIGO DEL ALGORITMO CORRESPONDIENTE
-
 */
 
 int main(){
@@ -40,51 +46,51 @@ int main(){
 	vector3_invertido.display();
 	cout <<  endl << "Vector 4 invertido: " << endl;
 	vector4_invertido.display();
-	cout << end << "Vector 5 invertido: " << endl;
+	cout << endl << "Vector 5 invertido: " << endl;
 	vector5_invertido.display();*/
 	
 	//Probando el algoritmo con cada uno de los 5 vectores invertidos. 
 	double t1_0 = gettime();
-	Vector vector1_invertido_end = //Poner algoritmo acá, con los argumentos necesarios, para ordenar el vector1_invertido.
+	//Algoritmo con vector 1.
 	double t1_1 = gettime();
 	double t1 = t1_1 - t1_0;
 	cout << "Tiempo tomado ordenando al vector1_invertido = " << t1 << endl;
 	
 	double t2_0 = gettime();
-	Vector vector2_invertido_end = //Poner algoritmo acá, con los argumentos necesarios, para ordenar el vector2_invertido.
+	//Algoritmo con vector 2.
 	double t2_1 = gettime();
 	double t2 = t2_1 - t2_0;
 	cout << "Tiempo tomado ordenando al vector2_invertido = " << t2 << endl;
 	
 	double t3_0 = gettime();
-	Vector vector3_invertido_end = //Poner algoritmo acá, con los argumentos necesarios, para ordenar el vector3_ivertido.
+	//Algoritmo con vector 3.
 	double t3_1 = gettime();
 	double t3 = t3_1 - t3_0;
 	cout << "Tiempo tomado ordenando al vector3_invertido = " << t3 << endl;
 	
 	double t4_0 = gettime();
-	Vector vector4_invertido_end = //Poner algoritmo acá, con los argumentos necesarios, para ordenar el vector4_invertido.
+	//Algoritmo con vector 4.
 	double t4_1 = gettime();
 	double t4 = t4_1 - t4_0;
 	cout << "Tiempo tomado ordenando al vector4_invertido = " << t4 << endl;
 	
 	double t5_0 = gettime();
-	Vector vector5_invertido_end = //Poner algoritmo acá, con los argumentos necesarios, para ordenar el vector5_invertido.
+	//Algoritmo con vector 5.
 	double t5_1 = gettime();
 	double t5 = t5_1 - t5_0;
 	cout << "Tiempo tomado ordenando al vector5_invertido = " << t5 << endl;
 	
 	//Imprimiendo los vectores invertidos, ya ordenados, después del algoritmo (opcional)
 	/*cout << endl << "Vector 1 invertido ya ordenado " << endl;
-	vector1_invertido_end.display();
+	vector1_invertido.display();
 	cout << endl << "Vector 2 invertido ya ordenado: " << endl;
-	vector2_invertido_end.display();
+	vector2_invertido.display();
 	cout << endl << "Vector 3 invertido ya ordenado: " << endl;
-	vector3_invertido_end.display();
-	cout <<  endl << "Vector 4 invertido ya ordenado: " << endl;
-	vector4_invertido_end.display();
-	cout << end << "Vector 5 invertido ya ordenado: " << endl;
-	vector5_invertido_end.display();*/
+	vector3_invertido.display();
+	cout << endl << "Vector 4 invertido ya ordenado: " << endl;
+	vector4_invertido.display();
+	cout << endl << "Vector 5 invertido ya ordenado: " << endl;
+	vector5_invertido.display();*/
 
 
 	return 0;
