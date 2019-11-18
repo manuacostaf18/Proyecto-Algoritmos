@@ -98,17 +98,17 @@ int main(){
 	double t5 = t5_1 - t5_0;
 	cout << "Tiempo tomado ordenando al vector5_invertido = " << t5 << endl;
 
-	//Imprimiendo los vectores desinvertidos, ya invertidos, después del algoritmo (opcional)
-	/*cout << endl << "Vector 1 desinvertido ya invertido " << endl;
-	vector1_desinvertido.display();
-	cout << endl << "Vector 2 desinvertido ya invertido: " << endl;
-	vector2_desinvertido.display();
-	cout << endl << "Vector 3 desinvertido ya invertido: " << endl;
-	vector3_desinvertido.display();
-	cout << endl << "Vector 4 desinvertido ya invertido: " << endl;
-	vector4_desinvertido.display();
-	cout << endl << "Vector 5 desinvertido ya invertido: " << endl;
-	vector5_desinvertido.display();*/
+	//Imprimiendo los vectores invertidos, ya ordenado, después del algoritmo (opcional)
+	/*cout << endl << "Vector 1 invertido ya ordenado: " << endl;
+	vector1_invertido.display();
+	cout << endl << "Vector 2 invertido ya ordenado: " << endl;
+	vector2_invertido.display();
+	cout << endl << "Vector 3 invertido ya ordenado: " << endl;
+	vector3_invertido.display();
+	cout << endl << "Vector 4 invertido ya ordenado: " << endl;
+	vector4_invertido.display();
+	cout << endl << "Vector 5 invertido ya ordenado: " << endl;
+	vector5_invertido.display();*/
 
     return 0;
 }

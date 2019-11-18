@@ -99,17 +99,17 @@ int main(){
 	double t5 = t5_1 - t5_0;
 	cout << "Tiempo tomado ordenando al vector5_ordenado = " << t5 << endl;
 
-	//Imprimiendo los vectores desordenados, ya ordenados, después del algoritmo (opcional)
-	/*cout << endl << "Vector 1 desordenado ya ordenado " << endl;
-	vector1_desordenado.display();
-	cout << endl << "Vector 2 desordenado ya ordenado: " << endl;
-	vector2_desordenado.display();
-	cout << endl << "Vector 3 desordenado ya ordenado: " << endl;
-	vector3_desordenado.display();
-	cout << endl << "Vector 4 desordenado ya ordenado: " << endl;
-	vector4_desordenado.display();
-	cout << endl << "Vector 5 desordenado ya ordenado: " << endl;
-	vector5_desordenado.display();*/
+	//Imprimiendo los vectores ordenados, ya ordenados, después del algoritmo (opcional)
+	/*cout << endl << "Vector 1 ordenado ya ordenado " << endl;
+	vector1_ordenado.display();
+	cout << endl << "Vector 2 ordenado ya ordenado: " << endl;
+	vector2_ordenado.display();
+	cout << endl << "Vector 3 ordenado ya ordenado: " << endl;
+	vector3_ordenado.display();
+	cout << endl << "Vector 4 ordenado ya ordenado: " << endl;
+	vector4_ordenado.display();
+	cout << endl << "Vector 5 ordenado ya ordenado: " << endl;
+	vector5_ordenado.display();*/
 
     return 0;
 }
