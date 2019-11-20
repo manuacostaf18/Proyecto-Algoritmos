@@ -66,6 +66,26 @@ int Vec::getlast(){
 	return array[count-1];
 }
 
+int Vec::getmax(){
+	int max = array[0];
+	for (int i = 0; i < count; i++)
+		if(array[i] > max){
+			max = array[i];
+		}
+	}
+	return max;
+}
+
+int Vec::getmin(){
+	int min = array[0];
+	for (int i = 0; i < count; i++){
+		if (array[i] < min){
+			min = array[i];
+		}
+	}
+	return min;
+}
+
 void Vec::display(){
 	for(int i = 0; i < count; i++){
 		cout << array[i] << " ";
