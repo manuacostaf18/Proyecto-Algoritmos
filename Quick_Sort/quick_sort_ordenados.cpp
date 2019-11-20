@@ -18,30 +18,27 @@ void swap(int i, int j, Vec& vector){
 }
 
 //Algoritmo
-void quicksort(Vec & vector, int L, int R){
-	int i, j, mid, piv;
-	i = L;
-	j = R;
-	mid = L + (R - L) / 2;
-	piv = vector.get(mid);
-	while(i < R and j > L){
-		while(vector.get(i) < piv){
+int partition(Vec & vector, int low, int high){
+	int pivot = vector.get(high);
+	int i = (low -1);
+	
+	for(int j = low; j <= high - 1; j++){
+		if(vector.get(j) < pivot){
 			i++;
+			swap(vector.get(i), vector.get(j), vector);
 		}
-		while(vector.get(j) > piv){
-			j--;
-		}
-		if(i <= j){
-			swap(i, j, vector);
-			i++;
-			j--;
-		}else{
-			if(i < R){
-				quicksort(vector, i, R);
-			}else if(j > L){
-				quicksort(vector, L, j);
-			}
-		}
+	}
+	
+	swap(vector.get(i+1), vector.get(high), vector);
+	return (i+1);
+}
+
+void quicksort(Vec & vector, int low, int high){
+	if(low < high){
+		int pi = partition(vector, low, high);
+		
+		quicksort(vector, low, pi - 1);
+		quicksort(vector, pi + 1, high);
 	}
 }
 
@@ -74,40 +71,40 @@ int main(){
 
 	//Probando el algoritmo con cada uno de los 5 vectores ordenados. 
 	double t1_0 = gettime();
-	int L1 = vector1_ordenado.getfront();
-	int R1 = vector1_ordenado.getlast();
+	int L1 = 0;
+	int R1 = vector1_ordenado.getsize()-1;
 	quicksort(vector1_ordenado, L1, R1);
 	double t1_1 = gettime();
 	double t1 = t1_1 - t1_0;
 	cout << "Tiempo tomado ordenando al vector1_ordenado = " << t1 << endl;
 	
 	double t2_0 = gettime();
-	int L2 = vector2_ordenado.getfront();
-	int R2 = vector2_ordenado.getlast();
+	int L2 = 0;
+	int R2 = vector2_ordenado.getsize()-1;
 	quicksort(vector2_ordenado, L2, R2);
 	double t2_1 = gettime();
 	double t2 = t2_1 - t2_0;
 	cout << "Tiempo tomado ordenando al vector2_ordenado = " << t2 << endl;
 	
 	double t3_0 = gettime();
-	int L3 = vector3_ordenado.getfront();
-	int R3 = vector3_ordenado.getlast();
+	int L3 = 0;
+	int R3 = vector3_ordenado.getsize()-1;
 	quicksort(vector3_ordenado, L3, R3);
 	double t3_1 = gettime();
 	double t3 = t3_1 - t3_0;
 	cout << "Tiempo tomado ordenando al vector3_ordenado = " << t3 << endl;
 	
 	double t4_0 = gettime();
-	int L4 = vector4_ordenado.getfront();
-	int R4 = vector4_ordenado.getlast();
+	int L4 = 0;
+	int R4 = vector4_ordenado.getsize()-1;
 	quicksort(vector4_ordenado, L4, R4);
 	double t4_1 = gettime();
 	double t4 = t4_1 - t4_0;
 	cout << "Tiempo tomado ordenando al vector4_ordenado = " << t4 << endl;
 	
 	double t5_0 = gettime();
-	int L5 = vector5_ordenado.getfront();
-	int R5 = vector5_ordenado.getlast();
+	int L5 = 0;
+	int R5 = vector5_ordenado.getsize()-1;
 	quicksort(vector5_ordenado, L5, R5);
 	double t5_1 = gettime();
 	double t5 = t5_1 - t5_0;
