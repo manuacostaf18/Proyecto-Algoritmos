@@ -20,6 +20,8 @@ class Vec{
 		int get(int pos);
 		int getfront();
 		int getlast();
+		int getmax();
+		int getmin();
 		void display();
 };
 
