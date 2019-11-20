@@ -1,2 +1,22 @@
 https://www.tutorialspoint.com/cplusplus-program-to-implement-radix-sort
 https://www.geeksforgeeks.org/radix-sort/
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int num
+    int contador;
+    cout<< "Este programa te va a decir cuantos digitos tiene un numero. Introduce uno: ";
+    int x;
+    cin >> x;
+
+    while(num/10>0)
+    {
+        num=num/10;
+        contador++;
+    }
+    cout << x << "tiene" << conador << "caracteres" << endl;
+
+    return 0;
+}
