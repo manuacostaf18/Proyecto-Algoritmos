@@ -26,6 +26,7 @@ void insertion_sort(Vector& vector){
 		int b = i-1;
 		while(vector.get(b) > vector.get(a)){
 			swap(a, b, vector);
+			a--;
 			b = a-1;
 		}
 	}
