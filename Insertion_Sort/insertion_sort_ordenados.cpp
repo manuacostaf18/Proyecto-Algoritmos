@@ -24,7 +24,7 @@ void insertion_sort(Vec& vector){
 		int b = i-1;
 		while(vector.get(b) > vector.get(a)){
 			swap(a, b, vector);
-      a--;
+      			a--;
 			b = a-1;
 		}
 	}
@@ -46,11 +46,11 @@ int main(){
 	for(int i = 1; i < 1001; i++) vector5_ordenado.push_back(i);
 
 	//Imprimiendo los vectores ordenados (opcional)
-	cout << "Vector 1 ordenado: " << endl;
+	/*cout << "Vector 1 ordenado: " << endl;
 	vector1_ordenado.display();
 	cout << endl << "Vector 2 ordenado: " << endl;
 	vector2_ordenado.display();
-	/*cout << endl << "Vector 3 ordenado: " << endl;
+	cout << endl << "Vector 3 ordenado: " << endl;
 	vector3_ordenado.display();
 	cout << endl << "Vector 4 ordenado: " << endl;
 	vector4_ordenado.display();
@@ -89,11 +89,11 @@ int main(){
 	cout << "Tiempo tomado ordenando al vector5_ordenado = " << t5 << endl;
 
 	//Imprimiendo los vectores ordenados, después del algoritmo (opcional)
-	cout << "Vector 1 ordenado: " << endl;
+	/*cout << "Vector 1 ordenado: " << endl;
 	vector1_ordenado.display();
 	cout << endl << "Vector 2 ordenado: " << endl;
 	vector2_ordenado.display();
-	/*cout << endl << "Vector 3 ordenado: " << endl;
+	cout << endl << "Vector 3 ordenado: " << endl;
 	vector3_ordenado.display();
 	cout << endl << "Vector 4 ordenado: " << endl;
 	vector4_ordenado.display();
