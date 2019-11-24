@@ -26,7 +26,7 @@ void insertion_sort(Vec& vector){
 		int b = i-1;
 		while(vector.get(b) > vector.get(a)){
 			swap(a, b, vector);
-      a--;
+      			a--;
 			b = a-1;
 		}
 	}
@@ -64,11 +64,11 @@ int main(){
     }
 
     //Imprimiendo los vectores desordenados (opcional)
-    cout << endl << "Vector 1 desordenado: " << endl;
+    /*cout << endl << "Vector 1 desordenado: " << endl;
     vector1_desordenado.display();
     cout << endl << "Vector 2 desordenado: " << endl;
     vector2_desordenado.display();
-    /*cout << endl << "Vector 3 desordenado: " << endl;
+    cout << endl << "Vector 3 desordenado: " << endl;
     vector3_desordenado.display();
     cout << endl << "Vector 4 desordenado: " << endl;
     vector4_desordenado.display();
@@ -107,11 +107,11 @@ int main(){
 	cout << "Tiempo tomado ordenando al vector5_desordenado = " << t5 << endl;
 
 	//Imprimiendo los vectores desordenados, ya ordenados, después del algoritmo (opcional)
-	cout << endl << "Vector 1 desordenado ya ordenado " << endl;
+	/*cout << endl << "Vector 1 desordenado ya ordenado " << endl;
 	vector1_desordenado.display();
 	cout << endl << "Vector 2 desordenado ya ordenado: " << endl;
 	vector2_desordenado.display();
-	/*cout << endl << "Vector 3 desordenado ya ordenado: " << endl;
+	cout << endl << "Vector 3 desordenado ya ordenado: " << endl;
 	vector3_desordenado.display();
 	cout << endl << "Vector 4 desordenado ya ordenado: " << endl;
 	vector4_desordenado.display();
