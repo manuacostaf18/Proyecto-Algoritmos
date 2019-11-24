@@ -24,7 +24,7 @@ void insertion_sort(Vec& vector){
 		int b = i-1;
 		while(vector.get(b) > vector.get(a)){
 			swap(a, b, vector);
-      a--;
+      			a--;
 			b = a-1;
 		}
 	}
@@ -46,11 +46,11 @@ int main(){
 	for(int i = 1000; i > 0; i--) vector5_invertido.push_back(i);
 
 	//Imprimiendo los vectores invertidos (opcional)
-	cout << endl << "Vector 1 invertido: " << endl;
+	/*cout << endl << "Vector 1 invertido: " << endl;
 	vector1_invertido.display();
 	cout << endl << "Vector 2 invertido: " << endl;
 	vector2_invertido.display();
-	/*cout << endl << "Vector 3 invertido: " << endl;
+	cout << endl << "Vector 3 invertido: " << endl;
 	vector3_invertido.display();
 	cout <<  endl << "Vector 4 invertido: " << endl;
 	vector4_invertido.display();
@@ -89,11 +89,11 @@ int main(){
 	cout << "Tiempo tomado ordenando al vector5_invertido = " << t5 << endl;
 
 	//Imprimiendo los vectores invertidos, ya ordenados, después del algoritmo (opcional)
-	cout << endl << "Vector 1 invertido ya ordenado: " << endl;
+	/*cout << endl << "Vector 1 invertido ya ordenado: " << endl;
 	vector1_invertido.display();
 	cout << endl << "Vector 2 invertido ya ordenado: " << endl;
 	vector2_invertido.display();
-	/*cout << endl << "Vector 3 invertido ya ordenado: " << endl;
+	cout << endl << "Vector 3 invertido ya ordenado: " << endl;
 	vector3_invertido.display();
 	cout << endl << "Vector 4 invertido ya ordenado: " << endl;
 	vector4_invertido.display();
